@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.ant {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ff6347;
+    border-radius: 50%;
+    cursor: pointer;
+}
