@@ -3,90 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>all about ants</title>
+    <title>ant information</title>
+    <link rel="stylesheet" href="habitat.css">
     <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: Arial, sans-serif;
-            background-color: #222;
-            color: #fff;
-            display: flex;
-        }
-
-        #sidebar {
-            width: 200px;
-            background-color: #333;
-            padding: 20px;
-        }
-
-        #content {
-            flex: 1;
-            padding: 20px;
-        }
-
-        h1, p {
-            margin-top: 0;
-        }
-
-        nav {
-            margin-bottom: 20px;
-        }
-
-        nav a {
-            display: block;
-            color: #fff;
-            text-decoration: none;
-            padding: 10px 0;
-        }
-
-        nav a:hover {
-            background-color: #444; 
-        }
-
-        .blog-post {
-            background-color: #444; 
-            padding: 20px;
-            margin-bottom: 20px;
-        }
-
-        .blog-post h2 {
-            margin-top: 0;
-        }
-
         
-        @media (max-width: 768px) {
-            body {
-                flex-direction: column;
-            }
-
-            #sidebar {
-                width: 100%;
-            }
+        .sidebar a {
+            transition: background-color 0.3s ease;
         }
     </style>
 </head>
 <body>
-    <div id="sidebar">
-        <nav>
-            <a href="habitat.html">Habitat</a>
-            <a href="#">anatomy</a>
-            <a href="#">types of ants</a>
-            <a href="#">movies about ants</a>
-        </nav>
-    </div>
-    <img src="ant.jpg">
-    <div id="content">
-        <h1>Ants</h1>
-        <div class="blog-post">
-            <h2>small but powerful in numbers</h2>
-            <p>Ants, despite their diminutive size, wield incredible power through their collective efforts and sheer numbers. 
-                These industrious insects exemplify the strength of unity and cooperation in the natural world. Despite their individual size, ants work together tirelessly, forming intricate colonies that can house millions of individuals. Their coordinated efforts allow them to undertake remarkable feats of construction, such as building vast underground networks known as ant farms. These structures, comprising intricate tunnels, chambers, and ventilation systems, serve as both living spaces and food storage facilities for the colony. Through their relentless determination and remarkable organizational skills, ants demonstrate how teamwork and collaboration can overcome seemingly insurmountable challenges, making them a testament to the power of collective action in the animal kingdom.</p>
+    <header>
+        <h1>All about ants</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="whatisaant.html">what is a ant?</a></li>
+                    <li><a href="antfacts.html">ant facts</a></li>
+                    <li><a href="photogallery.html">photo gallery</a></li>
+                    <li><a href="game.js">ant game</a></li>
+
+                </ul>
+            </nav>
         </div>
-        <div class="blog-post">
-            <h2>ant freaks only</h2>
-            <p>this website contains a lot of differnt information about ants. so if you only kind of like ants, this may not be the place for you.</p>
+        <div class="main-content">
+            <section>
+                <h2>ant life</h2>
+                <p>Ants are found on every continent except Antarctica. They inhabit a wide range of environments, including forests, grasslands, deserts, and urban areas. Some ant species prefer moist environments, while others thrive in dry climates.</p>
+                <p>Ant colonies can be found underground, in rotting wood, under rocks, or even inside plant stems. They create elaborate tunnels and chambers to house their queen, workers, and brood.</p>
+            </section>
+        </div>
+        <div class="image-container">
+            <img src="antscrap.jpg" alt="Ants Image">
         </div>
     </div>
+
+    <script>
+        const links = document.querySelectorAll('.sidebar a');
+
+        links.forEach(link => {
+            link.addEventListener('mouseenter', () => {
+                link.style.backgroundColor = '#555'; 
+            });
+
+            link.addEventListener('mouseleave', () => {
+                link.style.backgroundColor = '#333';
+            });
+        });
+    </script>
 </body>
 </html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ant Facts Slideshow</title>
+    <link rel="stylesheet" href="habitat.css">
+    <style>
+        what is here
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ant Facts Slideshow</h1>
+    </header>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="whatisaant.html">What is an ant?</a></li>
+                    <li><a href="antfacts.html">Ant facts</a></li>
+                    <li><a href="photogallery.html">Photo gallery</a></li>
+                    <li><a href="game.js">ant game</a></li>
+
+                </ul>
+            </nav>
+        </div>
+        <div class="main-content">
+            <section>
+                <h2>Ant Facts</h2>
+                <div class="slideshow">
+                    <p class="fact">Fact 1: Ants communicate using pheromones.</p>
+                    <p class="fact">Fact 2: Ants can carry objects many times their own weight.</p>
+                    <p class="fact">Fact 3: Ants have specialized roles within their colonies.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <script>
+        const facts = document.querySelectorAll('.fact');
+        let currentFactIndex = 0;
+
+        function showNextFact() {
+            facts[currentFactIndex].classList.remove('visible');
+            currentFactIndex = (currentFactIndex + 1) % facts.length;
+            facts[currentFactIndex].classList.add('visible');
+        }
+
+        setInterval(showNextFact, 3000); // Change fact every 3 seconds
+    </script>
+</body>
+</html>
