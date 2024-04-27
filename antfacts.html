@@ -6,7 +6,6 @@
     <title>Ant Facts Slideshow</title>
     <link rel="stylesheet" href="habitat.css">
     <style>
-        what is here
     </style>
 </head>
 <body>
@@ -22,14 +21,13 @@
                     <li><a href="antfacts.html">Ant facts</a></li>
                     <li><a href="photogallery.html">Photo gallery</a></li>
                     <li><a href="game.html">ant game</a></li>
-
                 </ul>
             </nav>
         </div>
         <div class="main-content">
             <section>
                 <div>
-                    <p><img src="ant.jpg"</p></div>
+                    <p><img src="ant.jpg"<p></div>
                 <h2>Ant Facts</h2>
                 <div class="slideshow">
                     <p class="fact">Fact 1: Ants communicate using pheromones.</p>
@@ -38,20 +36,8 @@
                 </div>
             </section>
         </div>
-        <img src="ant.jpg"
+        <img src="ant.jpg">
     </div>
-
-    <script>
-        const facts = document.querySelectorAll('.fact');
-        let currentFactIndex = 0;
-
-        function showNextFact() {
-            facts[currentFactIndex].classList.remove('visible');
-            currentFactIndex = (currentFactIndex + 1) % facts.length;
-            facts[currentFactIndex].classList.add('visible');
-        }
-
-        setInterval(showNextFact, 3000); // Change fact every 3 seconds
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
