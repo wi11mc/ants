@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="antfacts.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ant Facts Slideshow</title>
-    <link rel="stylesheet" href="habitat.css">
     <style>
     </style>
 </head>
 <body>
     <header>
-        <h1>Ant Facts Slideshow</h1>
+        <h1>Ant pics Slideshow</h1>
     </header>
     <div class="container">
         <div class="sidebar">
@@ -18,7 +18,7 @@
                 <ul>
                     <li><a href="home.html">Home</a></li>
                     <li><a href="whatisaant.html">What is an ant?</a></li>
-                    <li><a href="antfacts.html">Ant facts</a></li>
+                    <li><a href="antfacts.html">Ant pics</a></li>
                     <li><a href="photogallery.html">Photo gallery</a></li>
                     <li><a href="game.html">ant game</a></li>
                 </ul>
@@ -27,16 +27,41 @@
         <div class="main-content">
             <section>
                 <div>
-                    <p><img src="ant.jpg"<p></div>
-                <h2>Ant Facts</h2>
-                <div class="slideshow">
-                    <p class="fact">Fact 1: Ants communicate using pheromones.</p>
-                    <p class="fact">Fact 2: Ants can carry objects many times their own weight.</p>
-                    <p class="fact">Fact 3: Ants have specialized roles within their colonies.</p>
+                </div>
+                <h2>Ant pics</h2>
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="ant1.jpg" style="width:300px; height:200px;">
+                    <div class="text">this ant picture is pretty nice</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="ant2.jpg" style="width:300px; height:200px;">
+                    <div class="text">these ants are probably talking about ant drama</div>
+                  </div>
+                
+                  <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="ant3.jpg" style="width:300px; height:200px;">
+                    <div class="text">this ant woke up and just felt like carrying a entire bee by himself</div>
+                  </div>
+                
+                  <!-- Next and previous buttons -->
+                  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                  <span class="dot" onclick="currentSlide(1)"></span>
+                  <span class="dot" onclick="currentSlide(2)"></span>
+                  <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
                 </div>
             </section>
         </div>
-        <img src="ant.jpg">
     </div>
     <script src="script.js"></script>
 </body>
